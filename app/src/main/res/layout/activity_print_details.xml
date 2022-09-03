@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrintDetails"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#66DCEC"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFF"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="15"
+            android:shadowColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an acount to access all feature, Sign Up with Instagram, Facebook, or with your Email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardBackgroundColor="#000"
+                >
+<com.balysv.materialripple.MaterialRippleLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <Button
+                android:textSize="@dimen/_10ssp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FaceBook"
+                android:backgroundTint="#1333E6"
+                android:textStyle="bold"
+                android:textColor="#F6F6F6"
+                android:drawableLeft="@drawable/facebook22"
+                android:drawableTint="@android:color/white"
+
+
+                />
+</com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardBackgroundColor="#0000"
+                >
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:textSize="@dimen/_9ssp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Instagram"
+                        android:backgroundTint="#B83461"
+                        android:textStyle="bold"
+                        android:textColor="#F6F6F6"
+                        android:drawableLeft="@drawable/instagram2"
+                        android:drawableTint="@android:color/white"
+                        />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="#FDFCFC"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register Screan"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="15"
+                    android:shadowColor="#838181"
+                    />
+                <EditText
+                    android:id="@+id/email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/custominput"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="Email"
+                    android:textColorHint="#BCBBBB"
+                    android:inputType="textWebEmailAddress"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="#000"
+                    />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/custominput"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="Phone"
+                    android:textColorHint="#BCBBBB"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="#000"
+                    />
+
+                <EditText
+                    android:id="@+id/login_et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/custominput"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="Password"
+                    android:textColorHint="#BCBBBB"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="#000"
+
+                    />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/custominput"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="Confirm Password"
+                    android:textColorHint="#BCBBBB"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="#000"
+
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+     />
+
+    </LinearLayout>
+
+</RelativeLayout>

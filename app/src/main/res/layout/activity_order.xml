@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_order"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".OrderActivity"
+    >
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="Name"
+        android:textColorHint="#BCBBBB"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#FBFBFA"
+
+        />
+
+    <TextView
+        android:layout_margin="@dimen/_2sdp"
+        android:textSize="@dimen/_17ssp"
+        android:text="TOPPINGS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <CheckBox
+        android:id="@+id/whi"
+        android:text="Whipped cream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        android:id="@+id/cho"
+        android:text="Choclate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_margin="@dimen/_2sdp"
+        android:textSize="@dimen/_17ssp"
+        android:text="Quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:onClick="decremenrt"
+            android:id="@+id/b1"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:text="-"
+            android:layout_marginRight="@dimen/_22sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#000"
+            android:textColor="#F6F6F6"
+            />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="0"
+            android:textSize="@dimen/_18ssp" />
+
+        <Button
+            android:onClick="incremenrt"
+            android:id="@+id/b2"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:text="+"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#000"
+            android:textColor="#F6F6F6"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_margin="@dimen/_2sdp"
+        android:textSize="@dimen/_17ssp"
+        android:text="Order Summry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/orderdtesials"
+        android:layout_margin="@dimen/_2sdp"
+        android:textSize="@dimen/_14ssp"
+        android:text=" 10$ per coffe, further 1$ per Whipped Cream and 2$ for Chocolate"
+        android:textStyle="bold"
+        android:textColor="#D8CFC5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:onClick="addnew"
+        android:id="@+id/b5"
+        android:textSize="@dimen/_14ssp"
+        android:text="Confirm Order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custominput"
+        android:textColor="#F6F6F6"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+    <Button
+        android:onClick="order"
+        android:id="@+id/b3"
+        android:textSize="@dimen/_14ssp"
+        android:text="Order"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custominput"
+        android:textColor="#F6F6F6"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+
+
+
+
+</LinearLayout>
